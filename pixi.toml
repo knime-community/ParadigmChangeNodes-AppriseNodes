@@ -1,13 +1,13 @@
 [workspace]
-channels = ["knime/label/nightly", "knime", "conda-forge"]
+channels = ["knime/label/LTS-5-12", "knime", "conda-forge"]
 platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
 
 [tasks]
 
 [dependencies]
 python = "*"
-knime-extension = "*"
-knime-python-base = "*"
+knime-extension = "5.12.*"
+knime-python-base = "5.12.*"
 knime-python-versions = "5.12.*"
 packaging = ">=25.0"
 markdown = ">=3.8.2"
